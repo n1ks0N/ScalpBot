@@ -1,0 +1,143 @@
+.main {
+  height: 100vh;
+  background-color: #f3f3f3;
+  padding-top: 150px;
+  background-image: url('../utils/img/main.png');
+  background-repeat: no-repeat;
+  background-position: right 100px;
+}
+
+.main__title-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 15px 100px;
+  color: #fff;
+  width: 650px;
+  background-color: #ff8108;
+  height: 100px;
+  clip-path:
+    polygon(0% 0px,
+      /* верхняя левая */
+      0px 0%,
+      /* верхняя левая */
+      calc(100% - 100px) 0%,
+      /* верхняя правая */
+      100% 100px,
+      /* верхняя правая */
+      100% calc(100% - 0px),
+      /* нижняя правая */
+      calc(100% - 0px) 100%,
+      /* нижняя правая */
+      0px 100%,
+      /* нижняя левая */
+      0 calc(100% - 0px)
+      /* нижняя левая */
+    );
+}
+.main__titles {
+  margin-left: 15px;
+}
+
+.logo {
+  width: 80px;
+}
+
+.main__subtitle {
+  text-align: center;
+}
+.main__headline {
+  margin-top: 25px;
+  margin-left: 100px;
+}
+
+.price {
+  background-color: #ffffff;
+  box-shadow: 0px 2px 4px 0px #00000013;
+  text-align: center;
+  margin-top: 150px;
+  padding: 25px 0;
+}
+
+.price__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.price-card__text {
+  text-align: justify;
+}
+
+.price-card {
+  width: 350px;
+  margin: 15px;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.price-card__text {
+  font-size: 12px;
+}
+
+.price-card__text_big {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.price-card__price {
+  color: #ff8108;
+  margin: 10px 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.about {
+  background-color: rgba(13,110,253,.25);
+}
+.about__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: auto;
+  width: min-content;
+}
+.about__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 15px;
+}
+.about__number {
+  background-color: #ff8108;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: bold;
+  width: 100px;
+  height: 100px;
+  font-size: 42px;
+  border-radius: 50%;
+  margin: 0 50px;
+  box-shadow: 0px 2px 4px 0px #00000013;
+  transition: all .2s ease-in-out;
+}
+.about__number:hover {
+  background-color: #da700e;
+}
+.about__text {
+  width: 800px;
+}
+
+.accordion-button {
+  font-size: 22px;
+  font-weight: 500;
+}
